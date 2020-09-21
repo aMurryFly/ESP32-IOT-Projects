@@ -23,7 +23,7 @@ En el caso particular de estre proyecto se empleó el IDE de arduino, sin embarg
 ## 🚀 Descripción del código
 
 Para una saber más acerca del código y de cómo poder programar en el ESP32, comparto una liga en Youtube, donde se muestra todos estos aspectos y a su vez un ejemplo:
-[]()
+[https://youtu.be/aVfBxol9CI8](https://youtu.be/aVfBxol9CI8)
 
 ## Mejoras y consideraciones**
 
