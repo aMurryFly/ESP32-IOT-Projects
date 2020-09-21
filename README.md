@@ -2,10 +2,10 @@
 PAPIME - UNAM for ESP32 projects. IoT projects 
 
 Estudiante: Alfonso Murrieta Villegas
-Profesor Ulises Peñuelas
+Profesor: Ulises Peñuelas
 
-Instalación del ESP32 en el IDE de Arduino 
 
+## Instalación del ESP32 en el IDE de Arduino 
 
 Pasos a seguir para instalar nuestra tarjeta en el IDE:
 
