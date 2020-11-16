@@ -1,0 +1,7 @@
+{
+    "board": "esp32:esp32:esp32wrover",
+    "configuration": "PartitionScheme=default,FlashMode=qio,FlashFreq=80,UploadSpeed=921600,DebugLevel=none",
+    "port": "/dev/tty.usbserial-A50285BI",
+    "programmer": "USBtinyISP",
+    "sketch": "ESP32CAM_Car.ino"
+}
