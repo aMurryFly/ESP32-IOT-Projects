@@ -1,17 +1,6 @@
 #include "esp_camera.h"
 #include <WiFi.h>
-
-//
-// WARNING!!! Make sure that you have either selected ESP32 Wrover Module,
-//            or another board which has PSRAM enabled
-//
-
-// Select camera model
-#define CAMERA_MODEL_WROVER_KIT
-//#define CAMERA_MODEL_ESP_EYE
-//#define CAMERA_MODEL_M5STACK_PSRAM
-//#define CAMERA_MODEL_M5STACK_WIDE
-//#define CAMERA_MODEL_AI_THINKER
+#define CAMERA_MODEL_AI_THINKER
 
 #include "camera_pins.h"
 
@@ -46,7 +35,7 @@ void setup() {
   config.pin_reset = RESET_GPIO_NUM;
   config.xclk_freq_hz = 20000000;
   config.pixel_format = PIXFORMAT_JPEG;
-  //init with high specs to pre-allocate larger buffers
+  
   if(psramFound()){
     config.frame_size = FRAMESIZE_UXGA;
     config.jpeg_quality = 10;
@@ -62,7 +51,6 @@ void setup() {
   pinMode(14, INPUT_PULLUP);
 #endif
 
-  // camera init
   esp_err_t err = esp_camera_init(&config);
   if (err != ESP_OK) {
     Serial.printf("Camera init failed with error 0x%x", err);
@@ -70,13 +58,11 @@ void setup() {
   }
 
   sensor_t * s = esp_camera_sensor_get();
-  //initial sensors are flipped vertically and colors are a bit saturated
   if (s->id.PID == OV3660_PID) {
-    s->set_vflip(s, 1);//flip it back
-    s->set_brightness(s, 1);//up the blightness just a bit
-    s->set_saturation(s, -2);//lower the saturation
+    s->set_vflip(s, 1);
+    s->set_brightness(s, 1);
+    s->set_saturation(s, -2);
   }
-  //drop down frame size for higher initial frame rate
   s->set_framesize(s, FRAMESIZE_QVGA);
 
 #if defined(CAMERA_MODEL_M5STACK_WIDE)
@@ -101,6 +87,5 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   delay(10000);
 }
