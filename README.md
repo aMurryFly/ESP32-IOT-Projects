@@ -33,9 +33,7 @@
 
 
 ## About The Project
-
-Hey! I was* part of the CCNA program on the Engineering Faculty of UNAM, if you want to expand your knowledge about this topics, just come and read about it !
-
+Hey there! I'm happy to share one of my 2020 projects with you. It's all about AI on a microcontroller called ESP32, especifically ESP32-CAM.
 
 ### Getting Started
 
