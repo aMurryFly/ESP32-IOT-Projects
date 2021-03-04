@@ -14,24 +14,6 @@
 
 </p>
 
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li href="#about-the-project">About The Project</li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
-
-
 ## About The Project
 Hey there! I'm happy to share one of my 2020 projects with you. It's all about AI on a microcontroller called ESP32, especifically ESP32-CAM.
 
